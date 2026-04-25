@@ -98,7 +98,7 @@ jobs:
         run: |
           set -euo pipefail
 
-          cat > infra/terraform/backend.hcl <<EOF
+          cat > infra/terraform/backend.hcl <<'EOF'
           bucket       = "${TF_STATE_BUCKET}"
           key          = "${TF_STATE_KEY}"
           region       = "${AWS_REGION}"
